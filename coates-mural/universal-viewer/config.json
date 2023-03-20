@@ -1,0 +1,34 @@
+{
+  "options":
+  {
+    "footerPanelEnabled": true,
+    "leftPanelEnabled": true,
+	"pagingEnabled": false,
+	"preserveViewport": false
+	
+  },
+  "modules":
+  {
+	
+    "contentLeftPanel": 
+	{
+	 "options": {
+		"panelOpen": true,
+		"thumbsEnabled": true
+	  }
+    },  
+	
+    "footerPanel":
+    {
+      "options": {
+        "bookmarkEnabled": false,
+        "embedEnabled": false,
+        "feedbackEnabled": false,
+        "minimiseButtons": true,
+        "openEnabled": false,
+        "shareEnabled": false,
+		"downloadEnabled": false
+      }
+    }
+  }
+}

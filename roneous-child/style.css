@@ -1,0 +1,572 @@
+/*
+Theme Name: Roneous Child
+Theme URI: http://www.themelogi.com/themes/roneous
+Description: A child theme of Roneous Theme
+Author: THEMELOGI
+Author URI: http://www.themelogi.com
+Version: 1.0.0
+Template: roneous
+*/
+
+.bg-light a:hover, a:hover{
+   	color: #723130;
+}
+
+.textwidget a:hover {
+   	color: #723130 !important;
+}
+/* possible fix for sidebar overflow on mobile devices ??? */
+.main-container {
+	overflow-x: hidden;
+}
+blockquote:not(.blockquote-link) {
+	font-style:normal;
+	font-size: 18px;
+	line-height: 36px;
+}
+/* Top Nav Menu */
+nav .menu li a, nav .menu > li > a {
+	color: rgba(255,255,255,0.8);
+	font-size: 14px;
+	text-transform: none;
+	letter-spacing: 0;
+}
+
+nav .menu {
+    font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.nav-container nav {
+    background: #292b2c;
+
+}
+.nav-container nav .nav-open .module.widget-wrap.mobile-toggle i, .widget-wrap.module i {
+	color: #fff !important;
+	opacity: 0.7;
+}
+
+.navigation-open .main-container {padding-top: 0;}
+
+nav .menu > li:last-child a {
+	color: #32cd32;	
+	opacity: 1;
+}
+
+nav .menu > li:last-child a:hover {
+	color: #00ff00;
+}	
+
+nav .menu > li ul { /* Added so menu would show on iPad */
+	display: none;
+}
+nav .menu > li:hover > ul {
+	display: block;
+}
+
+/* Basic Styles */
+
+.page-title-center, .page-title-basic {
+    height: 140px; /* Changed from 240 - see if it covers all text */
+}
+i.icon {
+	width: auto !important;
+	height: auto !important;
+}
+
+.heading-title {
+		font-size: 2.5em;
+		text-transform: uppercase;
+		font-weight: 300;
+}
+
+.wpb_text_column table thead tr th {
+		background-color: #337ab7;
+		color: #fff;
+}
+#usra_buttons .btn {
+	margin: 10px 10px 0;
+}
+
+.dbsubjects ul {
+	list-style: none;
+}
+
+#front-special-section .vc_column-inner {
+	max-width: 550px;  
+	margin: 0 auto;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+#front-special-section .caption {
+    opacity: 0.8;
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+}
+ 
+ #front-special-section .image-caption.hover-caption:hover .caption {
+	 opacity: 1;
+ }
+
+#front-special-section .image-caption img {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+ }
+
+#front-special-section .image-caption:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}  
+
+#front-special-section .caption h5  {
+	color: #e3cda4;
+}
+/* Using the Library Styles */
+ /* Digital Humanities Specific Styles */
+.using_top_digi2 .icon-content, .digischol .icon-content, .v_content .icon-content {
+	text-align: left;
+	font-size: 14px;
+}
+.digischol .vertical-top { width: 24px; }
+
+.using_top_digi2 .boxed-icon {
+	min-height: 350px;
+	height: 350px;
+}
+
+@media all and (max-width: 1199px) {
+	.using_top_digi2 .vc_col-sm-4, .v_content .vc_col-sm-6, .digischol .vc_col-sm-4, .digischol .vc_col-sm-8 { width: 100%; } 
+	.using_top_digi2 .vc_col-sm-4 { margin-bottom: 15px; }
+	.using_top_digi2 .boxed-icon { min-height: inherit; height: inherit; }
+	.v_content .icon-content, .v_content .icon-link .display-table.text-left, .v_content .text-left { text-align: center !important;} 
+	.v_content .icon-link .display-cell, .v_content .display-table { display: block !important; }
+	}
+	
+.digischol a, .digischol a:focus { color: #e3cda4; }
+.digischol a:hover, .v_preserve a, .v_preserve a:focus  { color: #e3cda4; }
+
+.v_preserve a:hover, .digischol a:hover { color: yellow; }
+@media all and (max-width: 768px) {.showcase-single .showcase-image {width: 80%; margin: 0 auto;}}
+@media (min-width: 768px) {.blue_overlay .col-sm-3	{width: 33.333333333%;}}
+.blue_overlay .showcase-single .showcase-image:hover .image-overlay {  background: rgba(0,132,255,0.95) !important; }
+.blue_overlay .showcase-single:hover a h4{ text-transform: uppercase;}
+
+/* End digital humanities extras */ 
+.using_top .icon-content {
+	text-align: left;
+	font-size: 14px;
+}
+
+.using_top .boxed-icon {
+	min-height: 700px;
+	height: 700px;
+}
+
+.using_lists ul {
+	text-align: left;
+}
+.using_lists li {
+	margin-bottom: 20px;
+}
+.using_lists_white a {
+	color: #fff;
+}
+.using_lists .icon_title_list a {
+	
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 15px;
+	line-height: 24px;
+}
+.using_lists .mr-15 {
+	margin-right: 20px;
+}
+
+.using_lists .icon_title_list .icon {
+	font-size:20px;
+	line-height: 20px;
+}
+.using_lists_white a:hover {
+	color: #337ab7;
+}
+
+/* Footer */
+.footer-widget {
+	background: #333 !important;
+}
+.footer-widget .widget_nav_menu li {
+	font-size: 13px;
+	line-height: 27px;
+}
+.footer-widget .widget {
+	margin-bottom: 20px;
+}
+
+.sub-footer .social-list {
+	margin-right: 25px;
+}
+footer {
+	padding: 35px 0;
+}
+
+/* Recent Acquisitions */
+.recent_acq p {
+	line-height:1;
+}
+h2.newacq-subjheading {
+	margin-bottom: 0;
+	}
+#newacq-navlinks ul{
+	margin-bottom: 20px;
+}
+.newacq-catlink {
+	margin-top: 10px !important;
+}
+/* Autocomplete */
+.ui-widget {
+font-family: inherit;
+font-size: inherit;
+}
+
+.ui-menu .ui-menu-item:hover, .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus {
+    background: #eee;
+	border-color: #ccc;
+	   }
+   
+   .ui-autocomplete {
+    max-height: 150px;
+    overflow-y: auto;   /* prevent horizontal scrollbar */
+    overflow-x: hidden; /* add padding to account for vertical scrollbar */
+    z-index:1000 !important;
+	
+}
+/* Portfolio */
+.shuffle-item img {
+	border: 5px solid #fff;
+}
+
+.portfolio {
+	min-height: 750px;
+}
+
+.single-portfolio .nav-name {
+	padding-top: 15px;
+}
+.single-portfolio .subtitle { /* Removes date from paging option in portfolio */
+	display: none;
+}
+/* Showcase Full Width Styles */
+.student_showcase .showcase-single { width: 33.3%; }
+@media all and (max-width: 768px){ .student_showcase .showcase-single { width: 100%; } }
+#art_gallery .project-content { margin: 0 auto; }
+#art_gallery .showcase-single { padding: 0px !important; }
+#art_gallery .showcase-single a h4 { 
+/*	z-index: -10; */
+	display: none;
+transform: translate3d(0,130px,0) scale(1);
+-webkit-transform: translate3d(0,130px,0) scale(1); 
+padding-top: 0 !important;
+} 
+
+#art_gallery .showcase-single:hover a h4 { 
+	color: white !important; 
+	z-index: 0; 
+	display: inline-block;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transform: translate3d(0,-50%,0);
+	-webkit-transform: translate3d(0,-50%,0);
+	-moz-transform: translate3d(0,-50%,0); 
+}
+
+#art_gallery .showcase-single .showcase-image {
+  
+    box-shadow: 0 0 0 0;
+    -webkit-box-shadow: 0 0 0 0;
+	border-radius: 0;
+}
+#art_gallery .showcase-single .showcase-image:hover .image-overlay {  background: rgba(60,60,60,0.65); }
+
+#art_gallery .showcase-single a h4 {
+	position: absolute;
+	top: 50%;
+/*	left: 0;
+	width: 100%; */
+	left: 10%;
+	width: 80%;
+	font-size: 17px !important;
+}
+
+#art_gallery .showcase-single .showcase-image + a {
+    pointer-events: none;
+}
+
+#art_gallery .showcase-single .showcase-badge {
+    display: block;
+    background-color: inherit;
+    font-size: 15px;
+ }
+
+/* Hours Tool */ 
+.mbhi-is-current, .wpb_text_column table tr.mbhi-is-current:nth-child(2n) {
+  background-color: #498da0;
+  color: #fff;
+}
+/*
+.header_top1 .mabel-bhi-businesshours tr, .header_top1 .mabel-bhi-businesshours-inline span {
+	display:none;
+} */
+
+.header_top1 .mabel-bhi-businesshours tr.mbhi-is-current, .header_top1 .mabel-bhi-businesshours-inline span.mbhi-is-current, .header_top1 .mabel-bhi-businesshours-inline {
+	display:inline;
+}
+/*
+.header_top1 table tr.mbhi-is-current td:first-child {
+	display: none;
+}
+*/
+.mabel-bhi-businesshours td {
+	width: 50%;
+	padding: 0 10px;
+}
+.header_top1 .mbhi-is-current {
+	background-color: inherit;
+	color: #000;
+}
+
+.nav-hours {
+	padding-top: .5em;
+    padding-bottom: .5em;
+    background: #eee;
+     background-image: none;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+	font-size: 12px;
+	text-align: center;
+}
+/* Blogs on Homepage - Control Text wrapping */
+.home .post-wrap img {
+	display: block;
+}
+
+/* Top HomePage Search Options */
+#ebscohostsearchtext, input#guide_search[type="text"], input.booksearch[type="text"] {
+	width: 75%;
+	display: inline-block;
+	border-radius: 5px 0 0 5px;
+	border-right: 0;
+}
+
+input.ebscosubmit[type="submit"], input.booksubmit[type="submit"], input.guidesubmit[type="submit"]{
+	width: 25%;
+	display: inline-block;
+	font-size: 14px;
+	border-radius: 0 5px 5px 0;
+	line-height: 20px;	
+	border: 1px solid #e8e8e8;
+	border-left:0;
+	position: absolute;
+}
+.home_tabs .wpb-js-composer .vc_tta.vc_general .vc_tta-tab > a {
+	border-width: 0;
+}
+.wpb-js-composer .vc_tta-color-grey.vc_tta-style-classic.home_tabs .vc_tta-tab:first-child >  a:hover, .wpb-js-composer .vc_tta-color-grey.vc_tta-style-classic.home_tabs .vc_tta-tab.vc_active:first-child > a,
+.wpb-js-composer .vc_tta.vc_general.home_tabs .vc_tta-panel.vc_active:first-child .vc_tta-panel-title > a, .wpb-js-composer .vc_tta.vc_general.home_tabs .vc_tta-panel:first-child .vc_tta-panel-title > a:active {
+    background-color: #723130;
+	
+}
+
+.wpb-js-composer .vc_tta-color-grey.vc_tta-style-classic.home_tabs .vc_tta-tab:nth-child(2) >  a:hover, .wpb-js-composer .vc_tta-color-grey.vc_tta-style-classic.home_tabs .vc_tta-tab.vc_active:nth-child(2) > a,
+.wpb-js-composer .vc_tta.vc_general.home_tabs .vc_tta-panel.vc_active:nth-child(2) .vc_tta-panel-title > a, .wpb-js-composer .vc_tta.vc_general.home_tabs .vc_tta-panel:nth-child(2) .vc_tta-panel-title > a:active  {
+    background-color: #498da0;
+	
+}
+
+.wpb-js-composer .vc_tta-color-grey.vc_tta-style-classic.home_tabs .vc_tta-tab:nth-child(3) >  a:hover, .wpb-js-composer .vc_tta-color-grey.vc_tta-style-classic.home_tabs .vc_tta-tab.vc_active:nth-child(3) > a,
+.wpb-js-composer .vc_tta.vc_general.home_tabs .vc_tta-panel.vc_active:nth-child(3) .vc_tta-panel-title > a, .wpb-js-composer .vc_tta.vc_general.home_tabs .vc_tta-panel:nth-child(3) .vc_tta-panel-title > a:active {
+    background-color: #625578;
+}
+
+.wpb-js-composer .vc_tta-color-grey.vc_tta-style-classic.home_tabs .vc_tta-tab:nth-child(4) >  a:hover, .wpb-js-composer .vc_tta-color-grey.vc_tta-style-classic.home_tabs .vc_tta-tab.vc_active:nth-child(4) > a,
+.wpb-js-composer .vc_tta.vc_general.home_tabs .vc_tta-panel.vc_active:nth-child(4) .vc_tta-panel-title > a, .wpb-js-composer .vc_tta.vc_general.home_tabs .vc_tta-panel:nth-child(4) .vc_tta-panel-title > a:active {
+    background-color: #be9424;
+}
+
+.wpb-js-composer .vc_tta-color-grey.vc_tta-style-classic.home_tabs .vc_tta-tab:last-child >  a:hover, .wpb-js-composer .vc_tta-color-grey.vc_tta-style-classic.home_tabs .vc_tta-tab.vc_active:last-child > a,
+.wpb-js-composer .vc_tta.vc_general.home_tabs .vc_tta-panel.vc_active:last-child .vc_tta-panel-title > a, .wpb-js-composer .vc_tta.vc_general.home_tabs .vc_tta-panel:last-child .vc_tta-panel-title > a:active {
+    background-color: #738d33;
+}
+
+.wpb-js-composer .vc_tta-color-grey.vc_tta-style-classic.home_tabs .vc_tta-tab:first-child > a:hover span, .wpb-js-composer .vc_tta-color-grey.vc_tta-style-classic.home_tabs .vc_tta-tab:nth-child(2) > a:hover span, .wpb-js-composer .vc_tta-color-grey.vc_tta-style-classic.home_tabs .vc_tta-tab:nth-child(3) > a:hover span, .wpb-js-composer .vc_tta-color-grey.vc_tta-style-classic.home_tabs .vc_tta-tab:nth-child(4) > a:hover span, .wpb-js-composer .vc_tta-color-grey.vc_tta-style-classic.home_tabs .vc_tta-tab:last-child > a:hover span {
+	color: #ffffff;
+}
+
+.home .vc_active .vc_tta-title-text, .home_tabs .wpb-js-composer .vc_tta-color-grey.vc_tta-style-classic .vc_tta-tab > a:hover {
+	color: #fff !important;
+}
+/* Iframe Responsive Container */
+
+.i-container {
+    position: relative;
+    padding-bottom: 100%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.i-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Google Search */
+ 
+.gsc-input-box {
+		height: 30px !important;
+}
+
+.gsc-search-button-v2 {
+  /*  width: 33px !important;
+    height: 25px !important; */
+    padding: 2px 10px !important;
+    min-width: 23px !important;
+	font-size: 13px !important;
+}
+
+.gsc-search-button-v2, .gsc-search-button-v2:focus {
+	border-color: #4d90fe !important;
+	background-color: #4d90fe !important;
+}
+.gsc-search-button-v2:hover {
+    border-color: #2f5bb7 !important;
+    background-color: #357ae8 !important;
+}
+
+.gsc-input-box table {
+		margin-bottom: 0px !important;
+}
+
+table.gsc-search-box td {
+    vertical-align: top !important;
+}
+
+.gsc-result .gs-title {
+    height: 1.4em !important;
+}
+.gsc-control-cse .gsc-table-result {
+      margin-left: 8px;
+}
+
+/*Google CSE ad fix*/
+
+.gsc-adBlock {
+    display: none !important;
+}
+
+/* Sidebar Styles */
+.textwidget {
+	font-size: 13px;	
+}
+.textwidget a {
+   font-family: inherit; 
+  
+    font-style: normal;
+}
+
+
+@media (max-width: 990px) {
+	.logo {width: inherit;} 
+
+	.nav-open, .nav-open > div {
+        background: #292b2c;
+	}
+	/* Added to get menu to go over body text */
+	body .nav-container nav {
+	    opacity: 1;
+    	visibility: visible;
+    	transform: translate3d(0,0,0) !important;
+    	-webkit-transform: translate3d(0,0,0) !important;
+    	-moz-transform: translate3d(0,0,0) !important;
+	}
+	.nav-container { min-height: 0 !important; height: 64px;}
+}
+
+@media (max-width: 990px) and (min-width: 767px) {
+	.col-sm-3.showcase-single {
+	/*	width: 23%; */
+	}
+}
+
+@media (max-width: 640px) {
+	.heading-title {
+		font-size: 1.75em;
+		
+	}
+}
+
+@media (max-width: 479px) {
+		#ebscohostsearchtext, input#guide_search[type="text"], input.booksearch[type="text"], input.ebscosubmit[type="submit"], input.booksubmit[type="submit"], input.guidesubmit[type="submit"]{
+			font-size: 11px;
+		}
+		.vc_column_container { /* Added for single column spacing on mobile - so it doesn't bump up against the edges */
+			padding-left: 10px !important;
+			padding-right: 10px !important;
+		}
+		
+		.vc_column_container.vc_col-has-fill {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+		}
+	}
+
+/* Allow side menu to show on smaller screens and correct tablet view */
+ @media all and (max-width: 768px){
+	.hidden-sm-xs { display: inline-block !important; }
+	.vc_active .vc_tta-title-text, .home_tabs .wpb-js-composer .vc_tta-color-grey.vc_tta-style-classic .vc_tta-tab > a:hover {
+		color: #666 !important;
+	}
+	#sidebar:before, .main-sidebar:before { content: none;  } 
+	#sidebar, .main-sidebar { width: 100%; } 
+	
+	 /* Added to fix ipad on librarians page */
+	.vc_col-sm-4 { width: 100% !important; }
+	
+	/* Fixes Portfolio center shuffling issue and changes width so boxes are not so large on tablets */
+	.shuffle-item { right: 0; margin: auto; }
+	.showcase-single .showcase-image { width: 80%; margin: 0 auto; }
+	 
+	 /* Using the Library Settinig */
+	.using_top .boxed-icon { min-height: inherit; 	height: inherit; }
+}
+@media all and (max-width: 1120px) and (min-width: 991px){
+	nav .menu > li {
+		padding-right: 22px !important;
+	}
+}
+@media only screen and (max-width: 1024px) and (min-width: 767px) { .col-md-9 { width: 75%; float: left;} .col-md-3 { width: 25%; float: left;} input.guidesubmit[type="submit"], input.booksubmit[type="submit"] { font-size: 10px; } 
+/* Using the Library Setting */
+	.using_top .boxed-icon { min-height: 850px; height: 850px; }
+}
+/* @media only screen and (max-width: 1200px) and (min-width: 767px) { .col-md-9 { width: 75%; } .col-md-3 { width: 25%; float: left;}	} */
+@media only screen and (max-width: 768px) and (min-width: 768px) {.container { width: inherit;} #main-content { margin: 0 20px; padding-bottom: 5px;} .using_lists .vc_col-sm-8 {width: 100%;} } 
+@media only screen and (max-width: 767px) and (min-width: 480px) {.container { width: inherit;} #main-content { margin: 0 20px; padding-bottom: 5px;} }
+@media only screen and (max-width: 479px) {.container { width: inherit; padding:0;} #main-content { margin: 0 20px; padding-bottom: 5px;} }
+
+
+@media (min-width: 991px) { 
+	.nav-container nav.fixed {
+		position: inherit;
+		visibility: visible;
+		opacity: 1;
+	}
+}
+@media print { 
+	/* Print Styles Go Here */
+	 .footer-widget, #nav { display: none !important; } 
+	  a::after { display:none; }
+}
